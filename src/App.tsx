@@ -3,7 +3,7 @@ import NextPage from './components/NextPage'
 import NavAppBar from './components/NavAppBar'
 import About from './pages/About/About'
 import Portfolio from './pages/Portfolio/Portfolio'
-import Certifications from './pages/Certifications/Certifications'
+import Certifications from './pages/Certifications'
 import Home from './pages/Home'
 
 function App() {

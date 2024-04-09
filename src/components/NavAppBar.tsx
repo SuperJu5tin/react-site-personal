@@ -7,7 +7,7 @@ import Tooltip from '@mui/material/Tooltip';
  
 const redirectorStyle = {
   marginLeft:"10px",
-  fontSize:".78em"
+  fontSize:".72em"
 }
 
 export default function NavAppBar() {

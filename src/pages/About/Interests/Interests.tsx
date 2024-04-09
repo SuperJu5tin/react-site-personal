@@ -25,6 +25,7 @@ const Interests = () => {
 
   return (
     <Box sx={{
+      marginLeft:"auto",
       height:"fit-content",
       minWidth:"250px",
       maxWidth:"40vw",
@@ -36,7 +37,7 @@ const Interests = () => {
       color:"#555",
       borderRadius:"30px",
       border:"solid",
-      rotate:"2deg",
+      rotate:"-2deg",
     }}>
       <Typography variant="h5" sx={{
         textAlign:"center"

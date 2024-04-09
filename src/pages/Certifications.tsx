@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box"
 import Tooltip from "@mui/material/Tooltip"
 
-import javascriptCertification from '../../assets/jse-40-01-jse-certified-entry-level-javascript-programmer.png'
-import pythonCertification from '../../assets/pcep-30-02-pcep-certified-entry-level-python-programmer.png'
+import javascriptCertification from '../assets/badges/jse-40-01-jse-certified-entry-level-javascript-programmer.png'
+import pythonCertification from '../assets/badges/pcep-30-02-pcep-certified-entry-level-python-programmer.png'
 
 
 const imageHolder = {

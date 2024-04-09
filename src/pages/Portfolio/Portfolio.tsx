@@ -8,7 +8,7 @@ function Portfolio() {
         // flexDirection:"column",
         // alignContent:"center",
         // flexWrap:"wrap",
-        padding:"100px"
+        paddingTop:"100px"
       }}>
       <Snake />
     </Box>
