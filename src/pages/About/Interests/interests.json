@@ -1,0 +1,26 @@
+{
+    "Music": [
+      "Jazz",
+      "Classical",
+      "Alt",
+      "Rock"
+  
+    ],
+    "Cooking": [
+      "Mexican Food",
+      "Baked Goods",
+      "Potato based dishes"
+    ],
+    "Video Games": [
+      "Minecraft",
+      "Terraria",
+      "Valorant"
+  
+    ],
+    "Tech": [
+      "Building Computers",
+      "Home Automation",
+      "Basic Robots"
+    ]
+  }
+  
