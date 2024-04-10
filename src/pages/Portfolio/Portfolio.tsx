@@ -5,9 +5,6 @@ function Portfolio() {
   return (
     <Box sx={{
         display:"flex",
-        // flexDirection:"column",
-        // alignContent:"center",
-        // flexWrap:"wrap",
         paddingTop:"100px"
       }}>
       <Snake />

@@ -25,7 +25,7 @@ const Interests = () => {
 
   return (
     <Box sx={{
-      marginLeft:"auto",
+      // marginLeft:"auto",
       height:"fit-content",
       minWidth:"250px",
       maxWidth:"40vw",

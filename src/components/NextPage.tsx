@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+// import { Box } from "@mui/material"
 
 type CardProps = {
   pageId: string,
@@ -13,15 +13,19 @@ const HyphonToSpace = (title: string) => {
 const NextPage = ({pageId, color = "#89b1df"}: CardProps) => {
   return (
     <>
-      <Box id={pageId} sx={{
+      {/* <Box id={pageId} sx={{ */}
+      <div id={pageId} style={{
         zIndex:"-1",
         position:"relative",
         height:"90px",
         display:"flex"
       }}>
 
-      </Box>
-      <Box  sx={{
+      </div>
+      
+      {/* </Box>
+      <Box  sx={{ */}
+      <div style={{
         padding:"10px",
         height:"5vh",
         color:"#555",
@@ -37,7 +41,8 @@ const NextPage = ({pageId, color = "#89b1df"}: CardProps) => {
         }} >
           {HyphonToSpace(pageId).toUpperCase()}
         </h1>
-      </Box>
+      {/* </Box> */}
+      </div>
     </>
     
   )
