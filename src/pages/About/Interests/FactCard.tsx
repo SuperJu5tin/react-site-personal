@@ -27,7 +27,7 @@ const InterestCard = ({fact, hoverSetter}: CardProps) => {
   const hoveringSX = {
     fontSize:`${fontSize+10}px`,
     flexGrow:"2",
-    textShadow: "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue",
+    textShadow: "1px 1px 2px #222, 0 0 25px white, 0 0 5px #888",
   }
 
   const nonHoveringSX = {

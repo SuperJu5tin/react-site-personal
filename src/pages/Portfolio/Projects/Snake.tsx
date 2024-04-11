@@ -1,10 +1,12 @@
 // import { Box, Divider } from "@mui/material"
-import { Button, Typography } from "@mui/material"
+// import { Button, Typography } from "@mui/material"
 import Modal from '@mui/material/Modal';
 import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
 import snakePic from "../../../assets/snake.png"
 import { useState } from "react"
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 const sideLength = "max(190px, 25vmin)" 
 const sideLength2 = "max(550px, 70vmin)" 
@@ -13,7 +15,7 @@ const sideLength3 = "max(500px, 60vmin)"
 const basicOverlappedStyle = {
   width:sideLength,
   height:sideLength,
-  padding:"20px",
+  // padding:"20px",
   backgroundColor:"#98CBC7",
   borderRadius:"20px",
   border:"solid",
@@ -21,6 +23,7 @@ const basicOverlappedStyle = {
 
 const modalStyle = {
   display:"flex",
+  margin:"auto",
   width:sideLength2,
   height:sideLength2,
   justifySelf:"center",
@@ -63,8 +66,8 @@ const Snake = () => {
         <Typography variant="h5" sx={{marginTop:"max(10px, 2vmin)",}}>Github</Typography>
         <Divider flexItem ></Divider>
         <Typography variant="body1">Used two github repositories based on the language being compiled or interpreted. </Typography>
-        <Button target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled</Button>
-        <Button target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted</Button>
+        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled</a>
+        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted</a>
       </Box>
       <Box sx={{
         ...basicOverlappedStyle,
@@ -92,17 +95,20 @@ const Snake = () => {
         zIndex:"1",
       }}>
         <Button onClick={handleOpen}>Open Example</Button>
+        <Typography>Computer recomended</Typography>
         <Modal sx={modalStyle} open={open} onClose={handleClose}>
-          <Box sx={{margin:"auto"}}>
-          <Typography variant="h5"><a target='_blank' href="/snake/index.html">Click To Open In New Tab</a></Typography>
-            <Box sx={{margin:"auto"}}>
+          <Box sx={{display:"flex", flexDirection:"column", justifyItems:"center", alignItems:"center", justifyContent:"center"}}>
+            <Box sx={{display:"inline-flex"}}>
+              <Typography variant="h6"><a style={{textDecoration:"none", }} target='_blank' href="/snake/index.html">Open In New Tab</a></Typography>
+              <Button onClick={handleClose}>Close</Button>
+            </Box>
+            <Box>
               <iframe style={{width:sideLength3, height:sideLength3}} src="/snake/index.html" ></iframe>
             </Box>
           </Box>
         </Modal>
-        {/* <Typography variant="h5"><a target='_blank' href="/snake/index.html">Click for Example</a></Typography> */}
         <a target='_blank' style={{width:"100%", height:"90%"}} href="/snake/index.html">
-          <img src={snakePic} style={{width:"100%", height:"100%"}} />
+          <img src={snakePic} style={{width:"90%", height:"90%"}} />
         </a>
       </Box>
     </Box>

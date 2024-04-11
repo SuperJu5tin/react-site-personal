@@ -4,6 +4,7 @@ import FactCardHolder from "./FactCardHolder"
 import completeInterestsJSON from "./interests.json"
 import Divider from "@mui/material/Divider"
 import Box from "@mui/material/Box"
+import { useEffect, useState } from "react"
 
 type InterestObject = {
   [key:string]: Array<string>
@@ -23,9 +24,23 @@ const listJoinDiffLast = (list: Array<string>, delimiter: string, diffLast: stri
 
 const Interests = () => {
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <Box sx={{
-      // marginLeft:"auto",
+      marginLeft:width <= 500 ? "" : "auto",
       height:"fit-content",
       minWidth:"250px",
       maxWidth:"40vw",

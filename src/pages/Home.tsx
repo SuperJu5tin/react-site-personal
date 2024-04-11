@@ -15,8 +15,8 @@ const Home = () => {
     }}>
       <img src={pictureOfMe} style={{
         boxShadow: "10px 5px 5px black",
-        height:"40vh",
-        maxWidth:"50vh",
+        height:"min(400px, 57vmin)",
+        width:"min(550px, 70vmin)",
         borderRadius:"20px"
       }}/>
       <Box sx={{

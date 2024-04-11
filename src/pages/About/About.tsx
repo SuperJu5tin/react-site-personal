@@ -14,6 +14,9 @@ const About = () => {
           display:"grid",
           gap: "1rem",
           gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
+          // justifyContent:"center",
+          // justifyItems:"center",
+          // alignItems:"center",
         }}>
           <Skills />
           <Interests />      

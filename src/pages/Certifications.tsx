@@ -20,12 +20,14 @@ const Certifications = () => {
         marginTop:"50px",
         display:"flex",
         flexDirection:"column",
+        justifyItems:"center",
+        alignItems:"center",
         justifyContent:"center",
         alignContent:"center",
         flexWrap:"wrap",
       }}>
 
-        <Tooltip title={"Download Resume"}><a href='/justin_libhart_resume.pdf' download>Resume</a></Tooltip>
+        <Tooltip sx={{marginLeft:"auto"}} title={"Download Resume"}><a href='/justin_libhart_resume.pdf' download>Resume</a></Tooltip>
         <Box sx={imageHolder}>
           <a target='_blank' href='https://verify.openedg.org/?id=BRCN.s61L.LaQL' >
             <img src={javascriptCertification} width="200px" alt='JSE - Certified Entry-Level JavaScript Programmer Certification'/>

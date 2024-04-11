@@ -18,7 +18,7 @@ body {
 } */
 
 ::-webkit-scrollbar {
-  background: linear-gradient(#000 64px, rgb(40, 189, 139));
+  background: linear-gradient(#000 64px, #555);
   width: .8em;
   height: .8em;
 }

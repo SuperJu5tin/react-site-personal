@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Portfolio from './pages/Portfolio/Portfolio'
 import Certifications from './pages/Certifications'
 import Home from './pages/Home'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Portfolio />
       <NextPage pageId='certifications' color='#9cdf89'/>
       <Certifications />
+      <Footer />
     </>
   )
 }
