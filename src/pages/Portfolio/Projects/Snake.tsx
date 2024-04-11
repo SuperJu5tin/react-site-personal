@@ -8,14 +8,16 @@ import { useState } from "react"
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-const sideLength = "max(190px, 25vmin)" 
+const sideLength = "max(210px, 25vmin)" 
 const sideLength2 = "max(550px, 70vmin)" 
 const sideLength3 = "max(500px, 60vmin)" 
 
 const basicOverlappedStyle = {
   width:sideLength,
   height:sideLength,
-  // padding:"20px",
+  padding:"10px",
+  alignContent:"center",
+  justifyContent:"center",
   backgroundColor:"#98CBC7",
   borderRadius:"20px",
   border:"solid",
@@ -46,8 +48,10 @@ const Snake = () => {
     <Box sx={{
       display:"flex",
       flexDirection:"row",
-      justifyContent:"center",
+      justifyContent:"space-around",
       alignContent:"center",
+      justifyItems:"center",
+      alignItems:"center",
       flexWrap:"wrap",
       margin:"auto",
     }}>
@@ -58,7 +62,6 @@ const Snake = () => {
         flexDirection:"column",
         // flexWrap:"wrap",
         // justifyContent:"center",
-        alignContent:"center",
         textAlign:"center",
         rotate:"-10deg",
         zIndex:"2",
@@ -75,7 +78,6 @@ const Snake = () => {
         display:"flex",
         flexDirection:"column",
         flexWrap:"wrap",
-        alignContent:"center",
         textAlign:"center",
         zIndex:"3",
       }}>
@@ -88,14 +90,13 @@ const Snake = () => {
         rotate:"15deg",
         marginLeft:"-2vw",
         display:"flex",
-        flexDirection:"column",
-        // flexWrap:"wrap",
-        alignContent:"center",
+        flexDirection:"row",
+        flexWrap:"wrap",
         textAlign:"center",
         zIndex:"1",
       }}>
         <Button onClick={handleOpen}>Open Example</Button>
-        <Typography>Computer recomended</Typography>
+        <Typography>Keyboard Required</Typography>
         <Modal sx={modalStyle} open={open} onClose={handleClose}>
           <Box sx={{display:"flex", flexDirection:"column", justifyItems:"center", alignItems:"center", justifyContent:"center"}}>
             <Box sx={{display:"inline-flex"}}>
@@ -107,8 +108,8 @@ const Snake = () => {
             </Box>
           </Box>
         </Modal>
-        <a target='_blank' style={{width:"100%", height:"90%"}} href="/snake/index.html">
-          <img src={snakePic} style={{width:"90%", height:"90%"}} />
+        <a target='_blank' style={{width:"70%", height:"70%"}} href="/snake/index.html">
+          <img src={snakePic} style={{width:"100%", height:"100%"}} />
         </a>
       </Box>
     </Box>

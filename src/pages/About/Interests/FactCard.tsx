@@ -57,6 +57,7 @@ const InterestCard = ({fact, hoverSetter}: CardProps) => {
         background:color,
         border:"solid 1px",
         transition:"all .2s",
+        flexShrink:"1"
       },
         ...isHovering ? hoveringSX : nonHoveringSX
       }}>

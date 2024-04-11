@@ -11,16 +11,30 @@ const About = () => {
           paddingRight:"5vw",
           paddingTop:"50px",
           paddingBottom:"50px",
-          display:"grid",
-          gap: "1rem",
-          gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
-          // justifyContent:"center",
-          // justifyItems:"center",
-          // alignItems:"center",
+          // display:"grid",
+          gap: "5rem",
+          // gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
+          display:"flex",
+          flexWrap:"wrap",
+          justifyContent:"center",
+          justifyItems:"center",
+          alignItems:"center",
         }}>
-          <Skills />
+          <Box sx={{
+            display:"flex",
+            flexDirection:"column",
+            flexWrap:"wrap",
+            gap: "5rem",
+            justifyContent:"center",
+            justifyItems:"center",
+            alignItems:"center",
+          }}>
+            <Skills />
+            <Notes />
+          </Box>
+          
           <Interests />      
-          <Notes />
+          
         </Box>
       </>
     )

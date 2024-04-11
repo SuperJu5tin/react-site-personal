@@ -40,11 +40,11 @@ const Interests = () => {
 
   return (
     <Box sx={{
-      marginLeft:width <= 500 ? "" : "auto",
+      // marginLeft:width <= 500 ? "" : "auto",
       height:"fit-content",
-      minWidth:"250px",
-      maxWidth:"40vw",
-      gridRow:"span 2",
+      // minWidth:"250px",
+      // maxWidth:"40vw",
+      // gridRow:"span 2",
       padding:"20px",
       flexWrap:"wrap",
       backgroundColor:"#78c3a7",

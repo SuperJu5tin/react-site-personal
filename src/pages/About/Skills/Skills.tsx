@@ -25,8 +25,8 @@ const Skills = () => {
       color:"#555",
       borderRadius:"30px",
       border:"solid",
-      minWidth:"300px",
-      maxWidth:"25vw",
+      // minWidth:"300px",
+      // maxWidth:"25vw",
     }}>
       <Divider><Typography variant="h4">Skills</Typography></Divider>
       <Box sx={{

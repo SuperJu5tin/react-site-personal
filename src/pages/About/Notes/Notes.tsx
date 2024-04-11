@@ -12,7 +12,7 @@ const NotableAccomplishments = () => {
   
   return (
     <Box sx={{
-      gridColumn:"1",
+      // gridColumn:"1",
       rotate:"4deg",
       height:"fit-content",
       padding:"20px",
@@ -21,15 +21,19 @@ const NotableAccomplishments = () => {
       color:"#555",
       borderRadius:"30px",
       border:"solid",
-      minWidth:"250px",
-      maxWidth:"30vw",
+      // minWidth:"250px",
+      // maxWidth:"30vw",
     }}>
       
       <Divider><Typography variant="h3">Notes</Typography></Divider>
       <Box sx={{
-          display:"grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))"
+          // display:"grid",
+          // gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
+          display:"flex",
+          flexWrap:"wrap",
+          gap:"1rem",
       }}>
+          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
           <Box>
               <Typography variant="h5">Musical</Typography>
               <Divider />
@@ -46,6 +50,7 @@ const NotableAccomplishments = () => {
               </Typography>
                   
           </Box>
+          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
           <Box>
             <Typography variant="h5">Sports</Typography>
               <Divider />
@@ -55,6 +60,7 @@ const NotableAccomplishments = () => {
                   </ListItem>
               </List>
           </Box>
+          {/* <Divider ria-hidden="true" orientation="vertical" variant="middle" flexItem  /> */}
           <Box>
             <Typography variant="h5">Experience</Typography>
               <Divider />
@@ -62,6 +68,7 @@ const NotableAccomplishments = () => {
               <p>Reliable Helpers</p>
               <p>May 2020 - August 2023</p>
           </Box>
+          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
       </Box>
     </Box>
   )
