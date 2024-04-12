@@ -23,16 +23,16 @@ const Skill = ({skill}: CardProps) => {
   return (
     <>
       <Box sx={{
-        gridColumn:"1"
+        gridColumn:"1",
       }}>
-        <Typography>
+        <p style={{margin:"0px"}}>
           {name} 
-        </Typography>
+        </p>
       </Box>
       <Box>
-        <Typography >
+        <p style={{margin:".25em"}}>
           : {level}
-        </Typography>
+        </p>
       </Box>
       <Box sx={{
         marginLeft:"10px",

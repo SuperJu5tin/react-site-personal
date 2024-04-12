@@ -28,10 +28,12 @@ const Skills = () => {
       // minWidth:"300px",
       // maxWidth:"25vw",
     }}>
-      <Divider><Typography variant="h4">Skills</Typography></Divider>
+      <Divider><h1>Skills</h1></Divider>
       <Box sx={{
         display:"grid",
         gridTemplateColumns: ".75fr 1.5fr 2fr",
+        // gridTemplateColumns: "repeat(auto-fit, 1fr)",
+        alignItems:"center",
       }}>
         {
           typedSkillsList.map((skill: SkillObject) => (

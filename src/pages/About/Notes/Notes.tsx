@@ -2,17 +2,19 @@
 
 import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import ListItemText from "@mui/material/ListItemText"
 import Typography from "@mui/material/Typography"
+
+const categoryStyles = {
+  borderLeft:"dashed 1px", 
+  paddingLeft:".5rem", 
+  paddingRight:".5rem"
+}
 
 const NotableAccomplishments = () => {
   
   
   return (
     <Box sx={{
-      // gridColumn:"1",
       rotate:"4deg",
       height:"fit-content",
       padding:"20px",
@@ -21,54 +23,59 @@ const NotableAccomplishments = () => {
       color:"#555",
       borderRadius:"30px",
       border:"solid",
-      // minWidth:"250px",
-      // maxWidth:"30vw",
     }}>
       
-      <Divider><Typography variant="h3">Notes</Typography></Divider>
+      <Divider><h1>Notes</h1></Divider>
       <Box sx={{
-          // display:"grid",
-          // gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
           display:"flex",
           flexWrap:"wrap",
-          gap:"1rem",
       }}>
-          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
-          <Box>
+          <Box sx={{
+            ...categoryStyles
+          }}>
               <Typography variant="h5">Musical</Typography>
               <Divider />
               <h5>Plays:</h5>
-                <Typography variant="body2">
-                  Tuba Trombone Euphonium
-                </Typography>
+                <ul>
+                  <li>Tuba</li>
+                  <li>Trombone</li>
+                  <li>Euphonium</li>
+                </ul>
               <h5 >Bands played at Standley Lake:</h5>
-              <Typography variant="body2" >
-                Wind Ensemble
-                <br /> Concert Band
-                <br /> Musical Pit
-                <br /> Jazz
-              </Typography>
+              <p>
+                <ul>
+                  <li>Wind Ensemble</li>
+                  <li>Concert Band</li>
+                  <li>Musical Pit</li>
+                  <li>Jazz</li>
+                </ul>
+              </p>
                   
           </Box>
-          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
-          <Box>
+          <Box sx={{
+            textAlign:"center", 
+            ...categoryStyles,
+          }}>
             <Typography variant="h5">Sports</Typography>
-              <Divider />
-              <List>
-                  <ListItem>
-                      <ListItemText primary="Letter In Cross Country" secondary="2 years of lettering"  />
-                  </ListItem>
-              </List>
+            <Divider />
+            <ul>
+              <li>2 Years of Track and Field</li>
+              <li>2 Years of Cross Country</li>
+            </ul>
+            <h3>Lettering</h3>
+            <p>2 years In Cross Country</p>
           </Box>
-          {/* <Divider ria-hidden="true" orientation="vertical" variant="middle" flexItem  /> */}
-          <Box>
+          <Box sx={{
+            textAlign:"right", 
+            ...categoryStyles
+          }}>
             <Typography variant="h5">Experience</Typography>
-              <Divider />
-              <Typography variant="h6">Irrigation Specialist</Typography>
-              <p>Reliable Helpers</p>
-              <p>May 2020 - August 2023</p>
+            <Divider />
+            <Typography variant="h6">Irrigation Specialist</Typography>
+            <p style={{fontSize:".75em"}}>May 2020 - August 2023</p>
+            <h4>Reliable Helpers</h4>
+            <p style={{textAlign:"center"}}>test</p>
           </Box>
-          {/* <Divider aria-hidden="true" orientation="vertical" variant="middle" flexItem /> */}
       </Box>
     </Box>
   )

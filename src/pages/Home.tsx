@@ -10,7 +10,9 @@ const Home = () => {
       padding:"40px",
       display:"flex",
       justifyContent:"center",
+      // justifyItems:"center",
       alignContent:"center",
+      // alignItems:"center",
       flexWrap:"wrap",
     }}>
       <img src={pictureOfMe} style={{
@@ -20,14 +22,15 @@ const Home = () => {
         borderRadius:"20px"
       }}/>
       <Box sx={{
-        marginLeft:"30px",        display:"flex",
+        marginLeft:"30px",
+        display:"flex",
         flexDirection:"column",
-        alignContent:"center",
+        alignItems:"center",
         justifyContent:"center"
       }}>
-        <h2>Hello, I am Justin</h2>
-        <h4>I am currently a highschool student. </h4>
-        <p></p>
+        <h2>Hello, I am Justin Libhart</h2>
+        <h4>I am currently a highschool student.</h4>
+        <p style={{textWrap:"pretty"}}>I am a student at both Warren Tech and Standley Lake Highschool</p>
       </Box>
     </Box>
   )

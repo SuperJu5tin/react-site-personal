@@ -95,8 +95,10 @@ const Snake = () => {
         textAlign:"center",
         zIndex:"1",
       }}>
-        <Button onClick={handleOpen}>Open Example</Button>
-        <Typography>Keyboard Required</Typography>
+        <Box sx={{display:"flex", flexWrap:"wrap", alignItems:"baseline"}}>
+          <Button sx={{margin:"auto"}} onClick={handleOpen}>Open Example</Button>
+          <Typography sx={{margin:"auto"}}>Keyboard Required</Typography>
+        </Box>
         <Modal sx={modalStyle} open={open} onClose={handleClose}>
           <Box sx={{display:"flex", flexDirection:"column", justifyItems:"center", alignItems:"center", justifyContent:"center"}}>
             <Box sx={{display:"inline-flex"}}>
