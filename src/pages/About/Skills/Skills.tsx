@@ -1,8 +1,6 @@
-// import { Box, Divider, Typography } from "@mui/material"
 import Divider from "@mui/material/Divider"
 import Skill from "./Skill"
 import skillsList from "./skills.json"
-import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 
 type SkillObject = {

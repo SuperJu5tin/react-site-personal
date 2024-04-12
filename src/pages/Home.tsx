@@ -10,9 +10,7 @@ const Home = () => {
       padding:"40px",
       display:"flex",
       justifyContent:"center",
-      // justifyItems:"center",
       alignContent:"center",
-      // alignItems:"center",
       flexWrap:"wrap",
     }}>
       <img src={pictureOfMe} style={{
