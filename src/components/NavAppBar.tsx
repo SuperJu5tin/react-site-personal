@@ -17,7 +17,7 @@ export default function NavAppBar() {
       <Toolbar sx={{
         backgroundColor:"black",
       }}>
-        <Tooltip title={"Back To Top"} placement="bottom-start" ><Link variant="h6" sx={{ flexGrow: 1 }} color="inherit" underline="none" href="#top">Justin Libhart</Link></Tooltip>
+        <Tooltip title={"Back To Top"} placement="bottom-start" ><Link variant="h6" sx={{ flexGrow: 1, textAlign:"left" }} color="inherit" underline="none" href="#top">Justin Libhart</Link></Tooltip>
         <Tooltip title={"View About Me"}><Button variant="text" sx={redirectorStyle} color="inherit" href="#about-me">About Me</Button></Tooltip>
         <Tooltip title={"View Portfolio"}><Button variant="text" sx={redirectorStyle} color="inherit" href='#portfolio'>Portfolio</Button></Tooltip>
         <Tooltip title={"View Certifications"}><Button variant="text" sx={redirectorStyle} color="inherit" href='#certifications'>Certifications</Button></Tooltip>

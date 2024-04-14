@@ -1,8 +1,5 @@
-// import { Box, Divider, List, ListItem, ListItemText, Typography } from "@mui/material"
-
 import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
-import Typography from "@mui/material/Typography"
 
 const categoryStyles = {
   borderLeft:"dashed 1px", 
@@ -15,25 +12,26 @@ const NotableAccomplishments = () => {
   
   return (
     <Box sx={{
-      rotate:"4deg",
+      rotate:"2deg",
       height:"fit-content",
       padding:"20px",
       flexWrap:"wrap",
       backgroundColor:"#78c3a7",
-      color:"#555",
       borderRadius:"30px",
       border:"solid",
     }}>
       
-      <Divider><h1>Notes</h1></Divider>
+      <Divider><h1 style={{margin:"0"}}>Notes</h1></Divider>
       <Box sx={{
-          display:"flex",
-          flexWrap:"wrap",
+        display:"flex",
+        flexWrap:"wrap",
+        height:"fit-content",
+        width:"fit-content",
       }}>
           <Box sx={{
             ...categoryStyles
           }}>
-              <Typography variant="h5">Musical</Typography>
+              <h2>Musical</h2>
               <Divider />
               <h5>Plays:</h5>
                 <ul>
@@ -56,7 +54,7 @@ const NotableAccomplishments = () => {
             textAlign:"center", 
             ...categoryStyles,
           }}>
-            <Typography variant="h5">Sports</Typography>
+            <h2>Sports</h2>
             <Divider />
             <ul>
               <li>2 Years of Track and Field</li>
@@ -69,9 +67,9 @@ const NotableAccomplishments = () => {
             textAlign:"right", 
             ...categoryStyles
           }}>
-            <Typography variant="h5">Experience</Typography>
+            <h2>Experience</h2>
             <Divider />
-            <Typography variant="h6">Irrigation Specialist</Typography>
+            <h3>Irrigation Specialist</h3>
             <p style={{fontSize:".75em"}}>May 2020 - August 2023</p>
             <h4>Reliable Helpers</h4>
             <p style={{textAlign:"center"}}>test</p>

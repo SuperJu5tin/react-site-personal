@@ -20,7 +20,6 @@ const typedCompleteInterestsObject:InterestObject = {...completeInterestsJSON}
 const FactCardHolder = ({factType}: CardProps) => {
   
   const [remainingFactsList, setRemainingFactsList] = useState<Array<string>>(typedCompleteInterestsObject[factType])
-  const [isHovering, setIsHovering] = useState(false)
 
   const returnFact = () => {
     if (remainingFactsList.length >= 1) {
@@ -33,21 +32,6 @@ const FactCardHolder = ({factType}: CardProps) => {
   }
 
   const [activeFactsList, setActiveFactsList] = useState<Array<string>>(returnFact)
-
-  const factHolder = {
-    paddingLeft:isHovering ? "40px" : "45px",
-    paddingRight:isHovering ? "40px" : "45px",
-  }
-
-  const cardHolder = {
-    margin:"auto",
-    display:"flex",
-    flexDirection:"row",
-    flexWrap:"wrap",
-    justifyContent:"center",
-    alignItems:"center",
-  }
-
   
 
   const learnNewFact = () => {
@@ -62,17 +46,17 @@ const FactCardHolder = ({factType}: CardProps) => {
 
   
   return (
-    <Box sx={factHolder}>
+    <Box>
       <Button variant="contained" color="success" onClick={learnNewFact} endIcon={<AddRoundedIcon />} sx={{
         textTransform:"none",
         marginRight:"auto",
         marginTop:"10px",
         marginLeft:"5px",
       }}>More {factType} Favorites</Button>
-      <Box sx={cardHolder}>
+      <Box className="factCardHolder">
         {
           activeFactsList.map((fact: string) => (
-            <FactCard key={factType + fact} fact={fact} hoverSetter={setIsHovering} />
+            <FactCard key={factType + fact} fact={fact} />
           ))
         }
       </Box>

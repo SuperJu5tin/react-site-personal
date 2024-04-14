@@ -1,0 +1,20 @@
+.factCardHolder {
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.factCardHolder:hover .factCard:not(:hover) {
+    scale: .7;
+}
+
+.factCard:hover {
+    scale: 1.3;
+    text-shadow: 1px 1px 2px #222, 0 0 25px white, 0 0 5px #888;
+    box-shadow: 5px 5px 5px black;
+}

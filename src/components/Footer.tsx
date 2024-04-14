@@ -6,7 +6,8 @@ const Footer = () => {
   return (
     <Box sx={{
       marginTop:"100px",
-      height:"200px",
+      padding:"1vmax",
+      // height:"200px",
       background:"#777",
       border:"solid 5px",
       display:"grid",
@@ -15,10 +16,10 @@ const Footer = () => {
       alignItems:"center",
       textAlign:"center",
     }}>
-      <Box>All Rights Reserved @ 2024 justinlibhart.xyz</Box>
+      <h4 style={{color:"black"}}>All Rights Reserved @ 2024 justinlibhart.xyz</h4>
       <Box></Box>
       <Box>
-        Contact Me
+        <h4 style={{color:"black"}}>Contact Me</h4>
         <Box sx={{display:"flex", gap:"10px", flexDirection:"column"}}>
           <Box sx={{display:"flex", alignItems:"baseline", gap:"10px", flexDirection:"row"}}>
             <a href="mailto:superjuslib@gmail.com" >superjuslib@gmail.com</a>

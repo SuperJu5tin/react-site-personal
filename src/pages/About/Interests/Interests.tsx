@@ -1,8 +1,7 @@
 import FactCardHolder from "./FactCardHolder"
 import completeInterestsJSON from "./interests.json"
-import Divider from "@mui/material/Divider"
 import Box from "@mui/material/Box"
-
+import "./interests.css"
 
 type InterestObject = {
   [key:string]: Array<string>
@@ -25,21 +24,24 @@ const Interests = () => {
   return (
     <Box sx={{
       height:"fit-content",
+      width:"max(300px, 30vw)",
       padding:"20px",
+      display:"flex",
+      flexDirection:"column",
       flexWrap:"wrap",
       backgroundColor:"#78c3a7",
-      width:"fit-content",
       color:"#555",
       borderRadius:"30px",
       border:"solid",
       rotate:"-2deg",
+      justifyContent:"center",
+      alignContent:"space-around",
     }}>
-      <h2 style={{
-        textAlign:"center"
-      }}>
-        My Biggest interests are {listJoinDiffLast(interestsList, ", ", " and ")}
-      </h2>
-      <Divider />
+      <h1 className="test" >
+        My Biggest Interests
+      </h1>
+      <Box sx={{borderTop:"solid", width:"100%"}} ></Box>
+      <h2 style={{}}>{listJoinDiffLast(interestsList, ", ", " and ")}</h2>
       {
         interestsList.map((factType: string) => (
           <FactCardHolder key={factType} factType={factType} />

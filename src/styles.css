@@ -7,7 +7,38 @@ body {
   padding: 0;
   color: #555;
   background: linear-gradient(to top right, rgb(40, 189, 139) 50%, #00d4ff);
-  font-family: Bradley Hand, cursive;
+  font-family:'Indie Flower', Caveat, cursive;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  margin:0;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0px;
+  
+}
+
+h3 {
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+}
+
+h5 {
+  margin: 0px;
+
+}
+
+p {
+  margin: 0px;
 }
 
 /* @supports (scrollbar-color: red blue) {

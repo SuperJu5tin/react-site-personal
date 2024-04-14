@@ -5,7 +5,6 @@ import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
 import snakePic from "../../../assets/snake.png"
 import { useState } from "react"
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const sideLength = "max(210px, 25vmin)" 
@@ -13,7 +12,6 @@ const sideLength2 = "max(550px, 70vmin)"
 const sideLength3 = "max(500px, 60vmin)" 
 
 const basicOverlappedStyle = {
-  width:sideLength,
   height:sideLength,
   padding:"10px",
   alignContent:"center",
@@ -57,6 +55,8 @@ const Snake = () => {
     }}>
       <Box sx={{
         ...basicOverlappedStyle,
+        width:"calc(max(210px, 25vmin) - 2vw)",
+        paddingRight:"2vw",
         marginRight:"-2vw",
         display:"flex",
         flexDirection:"column",
@@ -66,14 +66,15 @@ const Snake = () => {
         rotate:"-10deg",
         zIndex:"2",
       }}>
-        <Typography variant="h5" sx={{marginTop:"max(10px, 2vmin)",}}>Github</Typography>
+        <h1 style={{marginTop:"max(10px, 2vmin)", marginBottom:"0px"}}>Github</h1>
         <Divider flexItem ></Divider>
-        <Typography variant="body1">Used two github repositories based on the language being compiled or interpreted. </Typography>
+        <p style={{fontFamily:"Indie Flower"}}>Used two github repositories based on the language being compiled or interpreted. </p>
         <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled</a>
         <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted</a>
       </Box>
       <Box sx={{
         ...basicOverlappedStyle,
+        width:sideLength,
         rotate:"5deg",
         display:"flex",
         flexDirection:"column",
@@ -81,12 +82,13 @@ const Snake = () => {
         textAlign:"center",
         zIndex:"3",
       }}>
-        <Typography variant="h3">Snake</Typography>
+        <h1 style={{margin:"0", fontFamily: '"Gloria Hallelujah", cursive'}}>Snake</h1>
         <Divider flexItem ></Divider>
-        <Typography variant="body1">A basic game of snake in multiple languages: Javascript, C, Python, and Rust. </Typography>
+        <p style={{fontFamily:'"Indie Flower", cursive'}}>A basic game of snake in multiple languages: Javascript, C, Python, and Rust. </p>
       </Box>
       <Box sx={{
         ...basicOverlappedStyle,
+        width:sideLength,
         rotate:"15deg",
         marginLeft:"-2vw",
         display:"flex",
@@ -95,15 +97,15 @@ const Snake = () => {
         textAlign:"center",
         zIndex:"1",
       }}>
-        <Box sx={{display:"flex", flexWrap:"wrap", alignItems:"baseline"}}>
+        <Box sx={{display:"flex", flexWrap:"wrap", alignItems:"baseline", justifyContent:"center",}}>
           <Button sx={{margin:"auto"}} onClick={handleOpen}>Open Example</Button>
-          <Typography sx={{margin:"auto"}}>Keyboard Required</Typography>
+          <h3>Keyboard Required</h3>
         </Box>
         <Modal sx={modalStyle} open={open} onClose={handleClose}>
           <Box sx={{display:"flex", flexDirection:"column", justifyItems:"center", alignItems:"center", justifyContent:"center"}}>
             <Box sx={{display:"inline-flex"}}>
-              <Typography variant="h6"><a style={{textDecoration:"none", }} target='_blank' href="/snake/index.html">Open In New Tab</a></Typography>
-              <Button onClick={handleClose}>Close</Button>
+              <h2 style={{fontFamily: '"Gloria Hallelujah", cursive'}}><a style={{textDecoration:"none", }} target='_blank' href="/snake/index.html">Open In New Tab</a></h2>
+              <Button sx={{ marginLeft:"10px", fontSize:"20px", fontFamily: '"Gloria Hallelujah", cursive'}} onClick={handleClose}>Close</Button>
             </Box>
             <Box>
               <iframe style={{width:sideLength3, height:sideLength3}} src="/snake/index.html" ></iframe>
