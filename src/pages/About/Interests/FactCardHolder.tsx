@@ -46,7 +46,7 @@ const FactCardHolder = ({factType}: CardProps) => {
 
   
   return (
-    <Box>
+    <Box sx={{display:"grid"}}>
       <Button variant="contained" color="success" onClick={learnNewFact} endIcon={<AddRoundedIcon />} sx={{
         textTransform:"none",
         marginRight:"auto",

@@ -2,9 +2,11 @@
     padding-top: 1rem ;
     padding-bottom: 1rem ;
     display: flex ;
+    width: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
     align-items: center;
     gap: 2rem;
 }

@@ -1,5 +1,7 @@
 import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
+import CC from '../../../assets/cc.svg';
+
 
 const categoryStyles = {
   borderLeft:"dashed 1px", 
@@ -64,6 +66,9 @@ const NotableAccomplishments = () => {
             </ul>
             <h3>Lettering</h3>
             <p>2 years In Cross Country</p>
+            {/* <img src={CC} style={{
+              width:"10vw"
+            }} /> */}
           </Box>
           <Box sx={{
             textAlign:"right", 

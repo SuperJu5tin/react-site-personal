@@ -7,7 +7,7 @@ const Footer = () => {
     <Box sx={{
       marginTop:"100px",
       padding:"1vmax",
-      // height:"200px",
+      height:"fit-content",
       background:"#777",
       border:"solid 5px",
       display:"grid",
@@ -21,7 +21,7 @@ const Footer = () => {
       <Box>
         <h4 style={{color:"black"}}>Contact Me</h4>
         <Box sx={{display:"flex", gap:"10px", flexDirection:"column"}}>
-          <Box sx={{display:"flex", alignItems:"baseline", gap:"10px", flexDirection:"row"}}>
+          <Box sx={{display:"flex", alignItems:"baseline", gap:"10px", flexWrap:"wrap", flexDirection:"row", justifyContent:"center"}}>
             <a href="mailto:superjuslib@gmail.com" >superjuslib@gmail.com</a>
             <Button size="small" variant="contained" onClick={() => {navigator.clipboard.writeText("superjuslib@gmail.com")}} startIcon={<ContentCopyIcon />}>Copy</Button>
           </Box>
