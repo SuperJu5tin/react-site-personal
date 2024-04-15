@@ -24,7 +24,9 @@ const NotableAccomplishments = () => {
       <Divider><h1 style={{margin:"0"}}>Notes</h1></Divider>
       <Box sx={{
         display:"flex",
+        flexDirection:"row",
         flexWrap:"wrap",
+        justifyContent:"center",
         height:"fit-content",
         width:"fit-content",
       }}>

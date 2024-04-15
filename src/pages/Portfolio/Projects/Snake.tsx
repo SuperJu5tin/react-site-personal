@@ -68,9 +68,9 @@ const Snake = () => {
       }}>
         <h1 style={{marginTop:"max(10px, 2vmin)", marginBottom:"0px"}}>Github</h1>
         <Divider flexItem ></Divider>
-        <p style={{fontFamily:"Indie Flower"}}>Used two github repositories based on the language being compiled or interpreted. </p>
-        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled</a>
-        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted</a>
+        <p style={{fontFamily:"Indie Flower"}}>Two github repositories</p>
+        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled Languages</a>
+        <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted Languages</a>
       </Box>
       <Box sx={{
         ...basicOverlappedStyle,
