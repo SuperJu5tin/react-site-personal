@@ -72,7 +72,7 @@ const NotableAccomplishments = () => {
             <h3>Irrigation Specialist</h3>
             <p style={{fontSize:".75em"}}>May 2020 - August 2023</p>
             <h4>Reliable Helpers</h4>
-            <p style={{textAlign:"center"}}>test</p>
+            <p style={{textAlign:"center"}}>Led irrigation based projects</p>
           </Box>
       </Box>
     </Box>
