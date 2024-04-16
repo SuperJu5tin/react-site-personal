@@ -27,14 +27,15 @@ const Certifications = () => {
         flexWrap:"wrap",
       }}>
 
-        <Tooltip sx={{marginLeft:"auto"}} title={"Download Resume"}><a href='/justin_libhart_resume.pdf' download>Resume</a></Tooltip>
+        <Tooltip sx={{marginLeft:"auto"}} title={"Download Resume"}><a href='/justin_libhart_resume.pdf' download>Download Resume</a></Tooltip>
+        <Tooltip sx={{marginLeft:"auto"}} title={"View Resume"}><a href='/justin_libhart_resume.pdf' target="_blank">View Resume</a></Tooltip>
         <Box sx={imageHolder}>
-          <a target='_blank' href='https://verify.openedg.org/?id=BRCN.s61L.LaQL' >
+          <Tooltip sx={{marginLeft:"auto"}} title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=BRCN.s61L.LaQL' >
             <img src={javascriptCertification} width="200px" alt='JSE - Certified Entry-Level JavaScript Programmer Certification'/>
-          </a>
-          <a target='_blank' href='https://verify.openedg.org/?id=bpk1.NUup.OEBM' >
+          </a></Tooltip>
+          <Tooltip sx={{marginLeft:"auto"}} title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=bpk1.NUup.OEBM' >
             <img src={pythonCertification} width="200px" alt='PCEP - Certified Entry-Level Python Programmer Certification'/>
-          </a>
+          </a></Tooltip>
         </Box>
       </Box>
     </>
