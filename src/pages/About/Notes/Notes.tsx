@@ -4,9 +4,32 @@ import CC from '../../../assets/cc.svg';
 
 
 const categoryStyles = {
-  borderLeft:"dashed 1px", 
+  display:"flex",
+  flexWrap:"wrap",
+  flexDirection:"column",
+  flex:"10em",
+  borderLeft:"dashed 1px",
+  // borderTop:"solid .25em",
   paddingLeft:".5rem", 
-  paddingRight:".5rem"
+  paddingRight:".5rem",
+  paddingBottom:"1rem",
+  textWrap:"wrap",
+  textAlign:"center", 
+  alignContent:"center",
+  alignItems:"center",
+  justifyContent:"space-between",
+  justifyItems:"center",
+}
+
+const categoryHeaderStyles = {
+
+  // justifySelf:"initial",
+  marginBottom:"1rem",
+  borderBottom:"solid 4px",
+}
+
+const experienceStyles = {
+  margin:"auto",
 }
 
 const NotableAccomplishments = () => {
@@ -17,17 +40,23 @@ const NotableAccomplishments = () => {
       rotate:"2deg",
       height:"fit-content",
       padding:"20px",
+      display:"flex",
       flexWrap:"wrap",
+      flexDirection:"column",
+      // display:"grid",
+      // gridTemplateColumns:"repeat(auto-fit, max(200px, 1fr))",
       backgroundColor:"#78c3a7",
       borderRadius:"30px",
       border:"solid",
     }}>
       
-      <Divider><h1 style={{margin:"0"}}>Notes</h1></Divider>
+      <Divider><h1 >Notes</h1></Divider>
       <Box sx={{
         display:"flex",
         flexDirection:"row",
         flexWrap:"wrap",
+        // display:"grid",
+        // gridTemplateColumns:"repeat(auto-fit, max(200px, 1fr))",
         justifyContent:"center",
         height:"fit-content",
         width:"fit-content",
@@ -35,8 +64,7 @@ const NotableAccomplishments = () => {
           <Box sx={{
             ...categoryStyles
           }}>
-              <h2>Musical</h2>
-              <Divider />
+              <h2 style={categoryHeaderStyles}>Musical</h2>
               <h5>Plays:</h5>
                 <ul>
                   <li>Tuba</li>
@@ -55,31 +83,28 @@ const NotableAccomplishments = () => {
                   
           </Box>
           <Box sx={{
-            textAlign:"center", 
             ...categoryStyles,
           }}>
-            <h2>Sports</h2>
-            <Divider />
-            <ul>
-              <li>2 Years of Track and Field</li>
-              <li>2 Years of Cross Country</li>
-            </ul>
+            <h2 style={categoryHeaderStyles}>Sports</h2>
+            <p>2 Years of Track and Field</p>
+            <p>2 Years of Cross Country</p>
             <h3>Lettering</h3>
             <p>2 years In Cross Country</p>
-            {/* <img src={CC} style={{
-              width:"10vw"
-            }} /> */}
+            <img src={CC} style={{
+              width:"60%"
+            }} />
           </Box>
           <Box sx={{
-            textAlign:"right", 
             ...categoryStyles
           }}>
-            <h2>Experience</h2>
-            <Divider />
-            <h3>Irrigation Specialist</h3>
-            <p style={{fontSize:".75em"}}>May 2020 - August 2023</p>
-            <h4>Reliable Helpers</h4>
-            <p style={{textAlign:"center"}}>Led irrigation based projects</p>
+            <h2 style={categoryHeaderStyles}>Experience</h2>
+            <Box sx={experienceStyles}>
+              <h3>Irrigation Specialist</h3>
+              <p style={{fontSize:".75em"}}>May 2020 - August 2023</p>
+              <h5>Reliable Helpers</h5>
+              <p style={{textAlign:"center"}}>Led irrigation based projects</p>
+            </Box>
+            
           </Box>
       </Box>
     </Box>
