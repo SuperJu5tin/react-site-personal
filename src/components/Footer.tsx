@@ -25,7 +25,7 @@ const Footer = () => {
             <a href="mailto:superjuslib@gmail.com" >superjuslib@gmail.com</a>
             <Button size="small" variant="contained" onClick={() => {navigator.clipboard.writeText("superjuslib@gmail.com")}} startIcon={<ContentCopyIcon />}>Copy</Button>
           </Box>
-          <a target='_blank' href="http://testout.com" >LinkedIn</a>
+          <a target='_blank' href="https://www.linkedin.com/in/justin-libhart-798498304/" >LinkedIn</a>
         </Box>
       </Box>
     </Box>
