@@ -52,6 +52,7 @@ const FactCardHolder = ({factType}: CardProps) => {
         marginRight:"auto",
         marginTop:"10px",
         marginLeft:"5px",
+        
       }}>More {factType} Favorites</Button>
       <Box className="factCardHolder">
         {

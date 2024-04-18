@@ -48,6 +48,7 @@ const NotableAccomplishments = () => {
       backgroundColor:"#78c3a7",
       borderRadius:"30px",
       border:"solid",
+      boxShadow:"3px 3px 3px 3px #555"
     }}>
       
       <Divider><h1 >Notes</h1></Divider>

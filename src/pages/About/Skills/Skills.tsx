@@ -23,6 +23,7 @@ const Skills = () => {
       color:"#555",
       borderRadius:"30px",
       border:"solid",
+      boxShadow:"3px 3px 3px 3px #555",
     }}>
       <Divider><h1>Skills</h1></Divider>
       <Box sx={{

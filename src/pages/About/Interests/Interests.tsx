@@ -36,6 +36,7 @@ const Interests = () => {
       rotate:"-2deg",
       justifyContent:"center",
       alignContent:"space-around",
+      boxShadow:"3px 3px 3px 3px #555"
     }}>
       <h1 className="test" >
         My Biggest Interests

@@ -19,6 +19,7 @@ const basicOverlappedStyle = {
   backgroundColor:"#98CBC7",
   borderRadius:"20px",
   border:"solid",
+  boxShadow:"3px 3px 3px 3px #555",
 }
 
 const modalStyle = {
