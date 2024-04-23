@@ -28,8 +28,8 @@ const Home = () => {
         justifyContent:"center"
       }}>
         <h1 style={{fontFamily:"Satisfy"}}>Hello, I am Justin Libhart</h1>
-        <h4>I am currently a highschool student.</h4>
-        <p style={{textWrap:"pretty"}}>I am a student at both Warren Tech and Standley Lake Highschool</p>
+        <h4>I am currently a high school student.</h4>
+        <p style={{textWrap:"pretty"}}>I am a student at both Warren Tech and Standley Lake High School</p>
       </Box>
     </Box>
   )
