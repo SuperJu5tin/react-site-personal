@@ -21,6 +21,7 @@ const Home = () => {
       }}/>
       <Box sx={{
         marginLeft:"30px",
+        marginTop:"2em",
         display:"flex",
         flexDirection:"column",
         alignItems:"center",

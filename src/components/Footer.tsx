@@ -26,6 +26,7 @@ const Footer = () => {
             <Button size="small" variant="contained" onClick={() => {navigator.clipboard.writeText("superjuslib@gmail.com")}} startIcon={<ContentCopyIcon />}>Copy</Button>
           </Box>
           <a target='_blank' href="https://www.linkedin.com/in/justin-libhart-798498304/" >LinkedIn</a>
+          <a target='_blank' href='https://github.com/SuperJu5tin'>Github</a>
         </Box>
       </Box>
     </Box>
