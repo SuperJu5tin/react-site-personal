@@ -4,3 +4,4 @@
 <!-- 1. Finish Portfolio section -->
 <!-- 1. Put contact info and all that in footer at bottom -->
 1. Make picture part more full
+1. Game type of interactivity with changes based on 2d character placement with place for
