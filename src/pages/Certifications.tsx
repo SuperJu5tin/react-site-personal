@@ -10,6 +10,7 @@ const imageHolder = {
   alignContent:"center",
   justifyContent:"center",
   flexWrap:"wrap",
+  gap:"1em",
 }
 
 const Certifications = () => {
@@ -25,15 +26,15 @@ const Certifications = () => {
         justifyContent:"center",
         alignContent:"center",
         flexWrap:"wrap",
+        gap:".3em",
       }}>
-
-        <Tooltip sx={{marginLeft:"auto"}} title={"Download Resume"}><a href='/justin_libhart_resume.pdf' download>Download Resume</a></Tooltip>
-        <Tooltip sx={{marginLeft:"auto"}} title={"View Resume"}><a href='/justin_libhart_resume.pdf' target="_blank">View Resume</a></Tooltip>
+        <a href='/justin_libhart_resume.pdf' download>Download resume</a>
+        <a href='/justin_libhart_resume.pdf' target="_blank">View resume in new tab</a>
         <Box sx={imageHolder}>
-          <Tooltip sx={{marginLeft:"auto"}} title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=BRCN.s61L.LaQL' >
+          <Tooltip title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=BRCN.s61L.LaQL' >
             <img src={javascriptCertification} width="200px" alt='JSE - Certified Entry-Level JavaScript Programmer Certification'/>
           </a></Tooltip>
-          <Tooltip sx={{marginLeft:"auto"}} title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=bpk1.NUup.OEBM' >
+          <Tooltip title={"See Verification"}><a target='_blank' href='https://verify.openedg.org/?id=bpk1.NUup.OEBM' >
             <img src={pythonCertification} width="200px" alt='PCEP - Certified Entry-Level Python Programmer Certification'/>
           </a></Tooltip>
         </Box>

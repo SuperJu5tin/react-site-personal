@@ -1,5 +1,3 @@
-// import { Box, Divider } from "@mui/material"
-// import { Button, Typography } from "@mui/material"
 import Modal from '@mui/material/Modal';
 import Box from "@mui/material/Box"
 import Divider from "@mui/material/Divider"
@@ -47,12 +45,7 @@ const Snake = () => {
     <Box sx={{
       display:"flex",
       flexDirection:"row",
-      justifyContent:"space-around",
-      alignContent:"center",
-      justifyItems:"center",
-      alignItems:"center",
       flexWrap:"wrap",
-      margin:"auto",
     }}>
       <Box sx={{
         ...basicOverlappedStyle,
@@ -61,8 +54,7 @@ const Snake = () => {
         marginRight:"-2vw",
         display:"flex",
         flexDirection:"column",
-        // flexWrap:"wrap",
-        // justifyContent:"center",
+        flexWrap:"wrap",
         textAlign:"center",
         rotate:"-10deg",
         zIndex:"2",
@@ -99,7 +91,7 @@ const Snake = () => {
         zIndex:"1",
       }}>
         <Box sx={{display:"flex", flexWrap:"wrap", alignItems:"baseline", justifyContent:"center",}}>
-          <Button sx={{margin:"auto"}} onClick={handleOpen}>Open Example</Button>
+          <Button onClick={handleOpen}>Open Example</Button>
           <h3>Keyboard Required</h3>
         </Box>
         <Modal sx={modalStyle} open={open} onClose={handleClose}>

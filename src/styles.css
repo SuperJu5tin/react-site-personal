@@ -44,7 +44,11 @@ p {
 }
 
 ul {
-  margin: 0;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* @supports (scrollbar-color: red blue) {
