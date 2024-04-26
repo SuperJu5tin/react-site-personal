@@ -20,7 +20,7 @@ function Portfolio() {
         justifyContent:"center",
         alignContent:"center",
       }}>
-        <h3 style={{borderBottom:'solid .1em'}} >Past projects are available on <a href='testout.com'>github</a></h3>
+        <h3 style={{borderBottom:'solid .1em'}} >Past projects are available on <a target='_blank' href='https://github.com/SuperJu5tin'>github</a></h3>
       </Box>
       <Snake />
       {/* <RandomWebsites /> */}
