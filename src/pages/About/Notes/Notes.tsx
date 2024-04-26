@@ -91,7 +91,7 @@ const NotableAccomplishments = () => {
             <p>2 Years of Cross Country</p>
             <h3>Lettering</h3>
             <p>2 years In Cross Country</p>
-            <img src={CC} style={{
+            <img alt="The Cross Country Letter Icon" src={CC} style={{
               width:"60%"
             }} />
           </Box>

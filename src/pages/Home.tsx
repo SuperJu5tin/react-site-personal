@@ -23,7 +23,7 @@ const Home = () => {
       <Box sx={{
         flex:"1"
       }}>
-        <img src={pictureOfMe} style={{
+        <img alt="A picture of Justin" src={pictureOfMe} style={{
           boxShadow: "10px 5px 5px black",
           height:"min(400px, 67vmin)",
           width:"min(550px, 80vmin)",

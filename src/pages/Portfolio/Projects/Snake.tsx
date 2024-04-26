@@ -105,7 +105,7 @@ const Snake = () => {
             </Box>
           </Box>
         </Modal>
-        <a target='_blank' style={{width:"70%", height:"70%"}} href="/snake/index.html">
+        <a target='_blank' style={{width:"70%", height:"70%"}} href="/snake/index.html" aria-label="View Justin's basic Javascript/HTML Snake Game">
           <img src={snakePic} style={{width:"100%", height:"100%"}} />
         </a>
       </Box>

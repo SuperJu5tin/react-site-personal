@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box'
 import Snake from './Projects/Snake'
-// import RandomWebsites from './Projects/RandomWebsites'
 
 function Portfolio() {
   return (
@@ -20,10 +19,9 @@ function Portfolio() {
         justifyContent:"center",
         alignContent:"center",
       }}>
-        <h3 style={{borderBottom:'solid .1em'}} >Past projects are available on <a target='_blank' href='https://github.com/SuperJu5tin'>github</a></h3>
+        <h3 style={{borderBottom:'solid .1em'}} >Past projects are available on <a target='_blank' href='https://github.com/SuperJu5tin' aria-label="View Justin's Github Profile">github</a></h3>
       </Box>
       <Snake />
-      {/* <RandomWebsites /> */}
     </Box>
   )
 }
