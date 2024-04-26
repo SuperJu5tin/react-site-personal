@@ -44,8 +44,8 @@ const Home = () => {
         flex:"1"
       }}>
         <h1 style={{fontFamily:"Satisfy", borderBottom:"solid .1em"}}>Hello, I am Justin Libhart</h1>
-        <h4>I am currently a high school student.</h4>
-        <p style={{textWrap:"pretty"}}>Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner, always open to new ways to do things more efficiently. I love working on projects and finding different ways to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps to physical Hardware.</p>
+        {/* <h4>I am currently a high school student.</h4> */}
+        <pre style={{textWrap:"pretty"}}>   Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner, always open to new ways to do things more efficiently. I love working on projects and finding different ways to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps to physical Hardware.</pre>
         {/* <p style={{textWrap:"wrap"}}></p> */}
       </Box>
     </Box>
