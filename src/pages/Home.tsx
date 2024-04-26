@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <Box sx={{
       minHeight:"60vh",
-      // padding:"40px",
       paddingTop:"5em",
       paddingBottom:"5em",
       paddingLeft:"3em",
@@ -19,8 +18,6 @@ const Home = () => {
       alignContent:"center",
       justifyItems:"center",
       alignItems:"center",
-      // display:"grid",
-      // gridTemplateColumns:"repeat(auto-fit, 500px)",
       gap:"2em",
     }}>
       <Box sx={{
@@ -35,8 +32,6 @@ const Home = () => {
       </Box>
       
       <Box sx={{
-        // marginLeft:"30px",
-        // marginTop:"2em",
         display:"flex",
         flexDirection:"column",
         alignItems:"center",
@@ -44,9 +39,7 @@ const Home = () => {
         flex:"1"
       }}>
         <h1 style={{fontFamily:"Satisfy", borderBottom:"solid .1em"}}>Hello, I am Justin Libhart</h1>
-        {/* <h4>I am currently a high school student.</h4> */}
         <p style={{textWrap:"pretty"}}><span style={{margin:"2em"}}></span>Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner, always open to new ways to do things more efficiently. I love working on projects and finding different ways to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps to physical Hardware.</p>
-        {/* <p style={{textWrap:"wrap"}}></p> */}
       </Box>
     </Box>
   )
