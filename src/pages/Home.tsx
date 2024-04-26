@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box"
-import pictureOfMe from "../assets/meSinging.jpg"
+import pictureOfMe from "../assets/meSinging.webp"
 
 
 const Home = () => {
