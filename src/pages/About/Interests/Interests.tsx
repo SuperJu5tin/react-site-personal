@@ -12,9 +12,9 @@ const interestsList = Object.keys(typedCompleteInterestsObject)
 
 const listJoinDiffLast = (list: Array<string>, delimiter: string, diffLast: string ) => {
 
-  let copyOfList = [...list]
+  const copyOfList = [...list]
   copyOfList[copyOfList.length - 1] = diffLast + copyOfList[copyOfList.length - 1]
-  let newSentence = copyOfList.join(delimiter)
+  const newSentence = copyOfList.join(delimiter)
   return newSentence
 
 }
