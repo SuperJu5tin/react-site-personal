@@ -26,7 +26,6 @@ const NextPage = ({pageId, color = "#89b1df"}: CardProps) => {
       <div style={{
         padding:"1.5em",
         height:"50px",
-        color:"#555",
         background:`${color}`,
         display:"flex",
         justifyContent:"center",
