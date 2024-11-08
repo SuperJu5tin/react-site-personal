@@ -18,10 +18,9 @@ export default function NavAppBar() {
         backgroundColor:"black",
       }}>
         <Tooltip title={"Back To Top"} placement="bottom-start" ><Link variant="h6" sx={{ flexGrow: 1, textAlign:"left" }} color="inherit" underline="none" href="#top">Justin Libhart</Link></Tooltip>
-        
-        <Tooltip title={"View About Me"}><Button variant="text" sx={redirectorStyle} color="inherit" href="#about-me">About Me</Button></Tooltip>
-        <Tooltip title={"View Portfolio"}><Button variant="text" sx={redirectorStyle} color="inherit" href='#portfolio'>Portfolio</Button></Tooltip>
-        <Tooltip title={"View Certifications"}><Button variant="text" sx={redirectorStyle} color="inherit" href='#certifications'>Certifications</Button></Tooltip>
+
+        <Tooltip title={"My Main Website"}><Button variant="text" sx={redirectorStyle} color="inherit" href="https://justinlibhart.dev">Main Site</Button></Tooltip>
+        <Tooltip title={"My Website Created in Vue"}><Button variant="text" sx={redirectorStyle} color="inherit" href="https://vue.justinlibhart.dev">Vue Site</Button></Tooltip>
       </Toolbar>
     </AppBar>
   );
