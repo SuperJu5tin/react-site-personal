@@ -35,6 +35,8 @@ const Footer = () => {
           </Box>
           <a target='_blank' href="https://www.linkedin.com/in/justin-libhart-798498304/" aria-label="View Justin's LinkedIn Profile">LinkedIn</a>
           <a target='_blank' href='https://github.com/SuperJu5tin' aria-label="View Justin's Github Profile">Github</a>
+          <a target='_blank' href='https://www.instagram.com/justinlibhart/' aria-label="View Justin's Instagram">Instagram</a>
+          <a target='_blank' href='https://www.credly.com/users/justin-libhart' aria-label="View Justin's Credly Profile">Credly</a>
         </Box>
       </Box>
     </Box>
